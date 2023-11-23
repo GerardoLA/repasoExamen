@@ -37,7 +37,7 @@ class MunicipiosController extends Controller
          "nombre"=>   $nombre ,
          "numGasolineras"=>$gasolineras
         ]);
-        return redirect()->route('dashboard');
+        return redirect()->route('municipios');
     }
 
     /**

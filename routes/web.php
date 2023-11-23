@@ -38,6 +38,12 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/municipios', [MunicipiosController::class, 'index'])->name('municipios');
 Route::delete('/municipios/{municipio}', [MunicipiosController::class, 'destroy'])->name('municipios.eliminar');
+Route::get('/municipios/{municipio}', [MunicipiosController::class, 'edit'])->name('municipios.update');
+
+
+//Route::get('/modificarMunicipioFormulario'/{id}, [MunicipiosController::class,''])->name('formInsertar');
+
+
 
 
 
